@@ -1,6 +1,9 @@
 .metadata
 bin/
 tmp/
+target
+.project
+.classpath
 *.tmp
 *.bak
 *.swp
