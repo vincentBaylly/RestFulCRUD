@@ -11,6 +11,7 @@ public class Employee {
     private String empNo;
     private String empName;
     private String position;
+    private Address address;
  
     // This default constructor is required if there are other constructors.
     public Employee() {
@@ -46,5 +47,13 @@ public class Employee {
     public void setPosition(String position) {
         this.position = position;
     }
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
  
 }
