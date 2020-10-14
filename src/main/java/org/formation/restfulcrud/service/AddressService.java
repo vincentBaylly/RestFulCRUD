@@ -11,7 +11,7 @@ import org.formation.restfulcrud.dao.AddressDAO;
 import org.formation.restfulcrud.model.Address;
 import org.formation.restfulcrud.model.Employee;
 
-@Path("address")
+@Path("addresses")
 public class AddressService {
  
     // URI:
@@ -25,15 +25,15 @@ public class AddressService {
     // URI:
     // /contextPath/servletPath/address
     @POST
-    public Employee addAddress(String empNo, Address address) {
-        return AddressDAO.addAddress(empNo, address);
+    public Employee addAddress(Employee emp) {
+        return AddressDAO.addAddress(emp.getEmpNo(), emp.getAddress());
     }
  
     // URI:
     // /contextPath/servletPath/adress
     @PUT
-    public Employee updateAddress(String empNo, Address address) {
-        return AddressDAO.updateAddress(empNo, address);
+    public Employee updateAddress(Employee emp) {
+        return AddressDAO.updateAddress(emp.getEmpNo(), emp.getAddress());
     }
  
     @DELETE

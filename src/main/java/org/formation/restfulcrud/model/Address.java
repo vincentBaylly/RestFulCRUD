@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "employee")
+@XmlRootElement(name = "address")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Address {
 	
